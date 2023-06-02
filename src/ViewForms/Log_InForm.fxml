@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <TextField fx:id="userNameLogInForm" layoutX="186.0" layoutY="113.0" />
+      <TextField fx:id="passwordLogInForm" layoutX="186.0" layoutY="165.0" />
+      <Label fx:id="loginField" layoutX="100.0" layoutY="40.0" prefHeight="17.0" prefWidth="74.0" text="Log-in">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginButton" layoutX="226.0" layoutY="254.0" mnemonicParsing="false" onAction="#clickLoginButton" text="Login" />
+      <Button fx:id="cancelButton" layoutX="335.0" layoutY="254.0" mnemonicParsing="false" onAction="#clickCancelButton" text="Cancel" />
+      <Label fx:id="usernameField" layoutX="83.0" layoutY="117.0" text="Username" />
+      <Label fx:id="passwordField" layoutX="85.0" layoutY="169.0" text="Password" />
+      <TextField fx:id="LocationFieldLogin" editable="false" layoutX="186.0" layoutY="200.0" text="Location" />
+      <Label fx:id="locationLabelField" layoutX="87.0" layoutY="204.0" text="Location" />
+   </children>
+</AnchorPane>

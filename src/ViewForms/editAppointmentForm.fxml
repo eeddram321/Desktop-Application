@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="721.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EditAppointmentController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Edit Appt.">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="73.0" text="Appointment ID" />
+      <TextField fx:id="editAppointmentID" disable="true" layoutX="151.0" layoutY="73.0" text="Auto gen." />
+      <ComboBox fx:id="editAppointmentStart" layoutX="459.0" layoutY="199.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="116.0" layoutY="108.0" text="Title" />
+      <TextField fx:id="editAppointmentTitle" layoutX="151.0" layoutY="105.0" />
+      <TextField fx:id="editAppointmentType" layoutX="151.0" layoutY="256.0" />
+      <Label layoutX="78.0" layoutY="140.0" text="Description" />
+      <TextField fx:id="editAppointmentDescription" layoutX="151.0" layoutY="136.0" />
+      <Label layoutX="95.0" layoutY="173.0" text="Location" />
+      <TextField fx:id="editAppointmentLocation" layoutX="151.0" layoutY="169.0" />
+      <Label layoutX="95.0" layoutY="211.0" text="Contact" />
+      <ComboBox fx:id="editAppointmentContact" layoutX="151.0" layoutY="207.0" prefWidth="150.0" />
+      <Label layoutX="95.0" layoutY="251.0" text="Type" />
+      <ComboBox fx:id="editAppointmentEnd" layoutX="459.0" layoutY="288.0" prefHeight="25.0" prefWidth="174.0" />
+      <ComboBox fx:id="editAppointmentCustomerID" layoutX="465.0" layoutY="69.0" prefWidth="150.0" />
+      <Label layoutX="379.0" layoutY="73.0" text="Customer ID" />
+      <Label layoutX="406.0" layoutY="117.0" text="User ID" />
+      <ComboBox fx:id="editAppointmentUserID" layoutX="465.0" layoutY="113.0" prefWidth="150.0" />
+      <DatePicker fx:id="editAppointmentDate" layoutX="459.0" layoutY="157.0" />
+      <Label layoutX="393.0" layoutY="165.0" text="Start Date" />
+      <Label layoutX="392.0" layoutY="199.0" text="Start Time" />
+      <Label layoutX="388.0" layoutY="292.0" text="End Time" />
+      <Button fx:id="editAppointmentSaveButton" layoutX="387.0" layoutY="340.0" mnemonicParsing="false" onAction="#clickEditApptSave" text="Save" />
+      <Button fx:id="editAppointmentCancel" layoutX="446.0" layoutY="340.0" mnemonicParsing="false" onAction="#clickEditAppointmentCancel" text="Cancel" />
+      <DatePicker fx:id="editAppointmentEndDate" layoutX="453.0" layoutY="239.0" />
+      <Label layoutX="395.0" layoutY="243.0" text="End Date" />
+   </children>
+</AnchorPane>

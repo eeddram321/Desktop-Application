@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="603.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CustomerController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Customers">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="customerTableView" layoutX="44.0" layoutY="66.0" prefHeight="456.0" prefWidth="879.0">
+        <columns>
+          <TableColumn fx:id="customerIDColumn" editable="false" prefWidth="75.0" text="Customer ID" />
+          <TableColumn fx:id="customerNameColumn" prefWidth="122.0" text="Name" />
+            <TableColumn fx:id="customerAddressColumn" prefWidth="110.0" text="Address" />
+            <TableColumn fx:id="customerPostalCodeColumn" prefWidth="93.0" text="Postal Code" />
+            <TableColumn fx:id="customerPhoneColumn" prefWidth="141.0" text="Phone Number" />
+            <TableColumn fx:id="customerDivisionColumn" prefWidth="101.0" text="Division" />
+            <TableColumn fx:id="countryNameColumn" prefWidth="137.0" text="Country" />
+            <TableColumn fx:id="customerDivisionIDColumn" prefWidth="75.0" text="Division ID" />
+        </columns>
+      </TableView>
+      <Button fx:id="customerBack" layoutX="44.0" layoutY="541.0" mnemonicParsing="false" onAction="#clickCustomerBack" text="Back" />
+      <Button fx:id="customerDelete" layoutX="582.0" layoutY="541.0" mnemonicParsing="false" onAction="#clickCustomerDelete" text="Delete" />
+      <Button fx:id="customerEdit" layoutX="656.0" layoutY="541.0" mnemonicParsing="false" onAction="#clickCustomerEdit" text="Edit" />
+      <Button fx:id="customerAdd" layoutX="710.0" layoutY="541.0" mnemonicParsing="false" onAction="#clickCustomerAdd" text="Add" />
+   </children>
+</AnchorPane>
